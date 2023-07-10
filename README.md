@@ -89,7 +89,7 @@ Math magicians is a website for all fans of mathematics. It is a Single Page App
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> To get a local copy up and running, follow these steps.
+To get a local copy up and running, follow these steps.
 
 
 
@@ -173,8 +173,6 @@ You can deploy this project using:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Perform Calculation]**
 - [ ] **[Generate Quotes]**
