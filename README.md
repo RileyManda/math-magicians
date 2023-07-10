@@ -196,10 +196,16 @@ Feel free to check the [issues page](https://github.com/RileyManda/math-magician
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
+<!-- SUPPORT -->
+## <b>Show your support 🌟</b><a name="support"></a>
 
+Thank you for taking the time to explore this project! Your support means a lot to me. If you find my project valuable and would like to contribute, here is one way you can support me:
 
-If you like this project...
+ - <b>Star the project ⭐️</b>: Show your appreciation by starring this GitHub repository. It helps increase visibility and lets others know that the project is well-received.
+
+ - <b>Fork the project 🍴 🎣</b>: If you're interested in making improvements or adding new features, feel free to fork the project. You can work on your own version and even submit pull requests to suggest changes.
+
+ - <b>Share with others 🗺️</b>: Spread the word about this project. Share it on social media, mention it in relevant forums or communities, or recommend it to colleagues and friends who might find it useful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,7 +213,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank...
+I would like to express my sincere gratitude to [Microverse](https://github.com/microverseinc), the dedicated reviewers, and collaborators. Your unwavering support, feedback, and collaborative efforts have played an immense role in making this journey a resounding success. I am truly grateful for your contributions and for being an integral part of my achievements. Thank you for your continued support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -230,7 +236,7 @@ I would like to thank...
   - Answer_2
 
   Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-  It can be downloaded here: https://nodejs.org/en/download/Node.jsNode.js
+  It can be downloaded [here](https://nodejs.org/en/download/Node.jsNode.js): 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
