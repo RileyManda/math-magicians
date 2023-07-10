@@ -38,7 +38,7 @@
 
 # 📖 Math Magicians <a name="about-project"></a>
 
->Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:Make simple calculations.Read a random math-related quote.
+Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:Make simple calculations.Read a random math-related quote.
 
 
 
@@ -54,7 +54,7 @@
   </ul>
 </details>
 
-<details>
+<!-- <details>
   <summary>Server</summary>
   <ul>
     <li><a href="https://expressjs.com/">Express.js</a></li>
@@ -66,13 +66,13 @@
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
-</details>
+</details> -->
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> **Project Setup**- React and Linters
+**Project Setup**- React and Linters
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
