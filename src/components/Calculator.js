@@ -14,7 +14,19 @@ class Calculator extends Component {
         </div>
 
         <div className="BodyContainer">
-          <div className="calcBodyleft">body l</div>
+          <div className="calcBodyleft">
+            <div className="calcButtonGrid">
+              <button type="button" className="calcButton">
+                AC
+              </button>
+              <button type="button" className="calcButton">
+                +/-
+              </button>
+              <button type="button" className="calcButton">
+                %
+              </button>
+            </div>
+          </div>
           <div className="calcBodyright">body r</div>
         </div>
       </div>
