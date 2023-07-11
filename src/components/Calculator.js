@@ -15,19 +15,32 @@ class Calculator extends Component {
 
         <div className="BodyContainer">
           <div className="calcBodyleft">
-            <div className="calcButtonGrid">
-              <button type="button" className="calcButton">
+            <div className="LeftButtonContainer">
+              <button type="button" className="leftButtons">
                 AC
               </button>
-              <button type="button" className="calcButton">
+              <button type="button" className="leftButtons">
                 +/-
               </button>
-              <button type="button" className="calcButton">
+              <button type="button" className="leftButtons">
                 %
               </button>
             </div>
           </div>
-          <div className="calcBodyright">body r</div>
+          <div className="calcBodyright">
+            <div className="RightButtonContainer">
+              <button type="button" className="rightButtons">
+                ÷
+              </button>
+              <button type="button" className="rightButtons">
+                ×
+              </button>
+              <button type="button" className="rightButtons">
+                ×
+              </button>
+              {' '}
+            </div>
+          </div>
         </div>
       </div>
     );

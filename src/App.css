@@ -1,6 +1,6 @@
 :root {
   --grey-white-color: #858693;
-  --font-white: #fff;
+  --white-theme-color: #fff;
   --calc-body-color-left: #e0e0e0;
   --calc-body-color-right: #dd8338;
 }
@@ -18,7 +18,7 @@
 
 .calcInput {
   background-color: var(--grey-white-color);
-  color: var(--font-white);
+  color: var(--white-theme-color);
   font-size: 30px;
   text-align: right;
   border: none;
@@ -28,7 +28,7 @@
 
 .calcInput input {
   background-color: var(--grey-white-color);
-  color: var(--font-white);
+  color: var(--white-theme-color);
   font-size: 30px;
   text-align: right;
   border: none;
@@ -58,21 +58,47 @@
   padding: 0;
 }
 
-.calButtonGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  padding: 10px;
-  margin: 0;
-}
-
-.calcButton {
-  background-color: #fff;
-  color: #000;
+.LeftButtonContainer {
+  display: flex;
+  flex-direction: row;
   font-size: 30px;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: 2px;
+  margin-top: 0;
+}
+
+.RightButtonContainer {
+  display: flex;
+  flex-direction: column;
+  color: #d6d1d1;
+  text-align: center;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.leftButtons {
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: var(--white-theme-color) solid 1px;
+  height: 40px;
+}
+
+.rightButtons {
+  background-color: var(--calc-body-color-left);
+  flex-wrap: wrap;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: var(--white-theme-color) solid 1px;
 }
