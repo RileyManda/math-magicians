@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 class LeftButtonContainer extends Component {
   constructor(props) {
@@ -10,43 +10,13 @@ class LeftButtonContainer extends Component {
     return (
       <div className="calcBodyleft">
         <div className="LeftButtonContainer">
-          <button type="button" className="leftButtons">
-            AC
-          </button>
-          <button type="button" className="leftButtons">
-            +/-
-          </button>
-          <button type="button" className="leftButtons">
-            %
-          </button>
-          {' '}
-          <button type="button" className="leftButtons">
-            7
-          </button>
-          <button type="button" className="leftButtons">
-            8
-          </button>
-          <button type="button" className="leftButtons">
-            9
-          </button>
-          <button type="button" className="leftButtons">
-            4
-          </button>
-          <button type="button" className="leftButtons">
-            5
-          </button>
-          <button type="button" className="leftButtons">
-            6
-          </button>
-          <button type="button" className="leftButtons">
-            1
-          </button>
-          <button type="button" className="leftButtons">
-            2
-          </button>
-          <button type="button" className="leftButtons">
-            3
-          </button>
+          {['AC', '+/-', '%', '7', '8', '9', '4', '5', '6', '1', '2', '3'].map(
+            (label) => (
+              <button key={label} type="button" className="leftButtons">
+                {label}
+              </button>
+            ),
+          )}
           <div className="FooterButtons">
             <button type="button" className="zero FooterButtons">
               0
@@ -60,4 +30,5 @@ class LeftButtonContainer extends Component {
     );
   }
 }
+
 export default LeftButtonContainer;

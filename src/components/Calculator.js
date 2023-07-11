@@ -15,7 +15,6 @@ class Calculator extends Component {
         <div className="calcInput">
           <input type="text" defaultValue="0" />
         </div>
-
         <div className="BodyContainer">
           <LeftView />
           <RightView />

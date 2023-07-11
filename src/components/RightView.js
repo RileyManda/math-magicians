@@ -10,22 +10,11 @@ class LeftButtonContainer extends Component {
     return (
       <div className="calcBodyright">
         <div className="RightButtonContainer">
-          <button type="button" className="rightButtons">
-            ÷
-          </button>
-          <button type="button" className="rightButtons">
-            ×
-          </button>
-          <button type="button" className="rightButtons">
-            -
-          </button>
-          <button type="button" className="rightButtons">
-            +
-          </button>
-          <button type="button" className="rightButtons">
-            =
-          </button>
-          {' '}
+          {['÷', '×', '-', '+', '='].map((label) => (
+            <button key={label} type="button" className="rightButtons">
+              {label}
+            </button>
+          ))}
         </div>
       </div>
     );
