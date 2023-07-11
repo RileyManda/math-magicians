@@ -1,39 +1,124 @@
+:root {
+  --grey-white-color: #858693;
+  --white-theme-color: #fff;
+  --calc-body-color-left: #e0e0e0;
+  --calc-body-color-right: #dd8338;
+}
+
 .App {
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.Container {
+  margin: 60px auto;
+  width: 60%;
+}
+
+.calcInput {
+  background-color: var(--grey-white-color);
+  color: var(--white-theme-color);
+  font-size: 30px;
+  text-align: right;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+.calcInput input {
+  background-color: var(--grey-white-color);
+  color: var(--white-theme-color);
+  font-size: 30px;
+  text-align: right;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+.BodyContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.calcBodyleft {
+  align-self: flex-start;
+  background-color: var(--calc-body-color-left);
+  width: 70%;
+  height: 300px;
+}
+
+.calcBodyright {
+  align-self: flex-end;
+  background-color: var(--calc-body-color-right);
+  width: 30%;
+  height: 300px;
+  padding: 0;
+}
+
+.LeftButtonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-top: 0;
+}
+
+.RightButtonContainer {
+  display: flex;
+  flex-direction: column;
+  color: #d6d1d1;
+  text-align: center;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.leftButtons {
+  flex: 0 0 33.333333%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: var(--white-theme-color) solid 1px;
+  height: 60px;
+}
+
+.rightButtons {
+  background-color: var(--calc-body-color-right);
+  flex-wrap: wrap;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  border: var(--white-theme-color) solid 1px;
+}
+
+.FooterButtons {
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  border: var(--white-theme-color) solid 1px;
+}
+
+.zero {
+  width: 67%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.fullstop {
+  width: 33%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
