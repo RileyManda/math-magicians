@@ -7,3 +7,14 @@
 .Container {
   margin: 60px auto;
 }
+
+.calcInput {
+  background-color: rgb(61, 61, 61);
+  width: 50%;
+  height: 40px;
+  font-size: 30px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding-right: 10px;
+}
