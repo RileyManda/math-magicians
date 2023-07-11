@@ -1,8 +1,8 @@
 :root {
   --grey-white-color: #858693;
   --font-white: #fff;
-  --yellow-btns: #dd8338;
-  --calc-body-color: #e0e0e0;
+  --calc-body-color-left: #e0e0e0;
+  --calc-body-color-right: #dd8338;
 }
 
 .App {
@@ -13,24 +13,47 @@
 
 .Container {
   margin: 60px auto;
-  width: 50%;
+  width: 60%;
 }
 
 .calcInput {
   background-color: var(--grey-white-color);
   color: var(--font-white);
-  width: 100%;
-  height: 40px;
   font-size: 30px;
   text-align: right;
   border: none;
   outline: none;
-  padding-right: 10px;
+  margin: 0;
 }
 
-.calcBody {
-  background-color: var(--calc-body-color);
+.calcInput input {
+  background-color: var(--grey-white-color);
+  color: var(--font-white);
+  font-size: 30px;
+  text-align: right;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+.BodyContainer {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  padding: 6px;
   height: auto;
+}
+
+.calcBodyleft {
+  align-self: flex-start;
+  background-color: var(--calc-body-color-left);
+  width: 70%;
+  height: 400px;
+}
+
+.calcBodyright {
+  align-self: flex-end;
+  background-color: var(--calc-body-color-right);
+  width: 30%;
+  height: 400px;
+  padding: 0;
 }

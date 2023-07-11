@@ -9,9 +9,13 @@ class Calculator extends Component {
   render() {
     return (
       <div className="Container">
-        <div>
-          <input className="calcInput" value="0" />
-          <div className="calcBody">{/* Buttons for calculator */}</div>
+        <div className="calcInput">
+          <input value="0" />
+        </div>
+
+        <div className="BodyContainer">
+          <div className="calcBodyleft">body l</div>
+          <div className="calcBodyright">body r</div>
         </div>
       </div>
     );
