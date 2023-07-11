@@ -1,3 +1,10 @@
+:root {
+  --grey-white-color: #858693;
+  --font-white: #fff;
+  --yellow-btns: #dd8338;
+  --calc-body-color: #e0e0e0;
+}
+
 .App {
   text-align: center;
   margin: 0 auto;
@@ -9,7 +16,8 @@
 }
 
 .calcInput {
-  background-color: rgb(61, 61, 61);
+  background-color: var(--grey-white-color);
+  color: var(--font-white);
   width: 50%;
   height: 40px;
   font-size: 30px;
@@ -17,4 +25,8 @@
   border: none;
   outline: none;
   padding-right: 10px;
+}
+
+.calcBody {
+  background-color: var(--calc-body-color);
 }
