@@ -3,14 +3,15 @@ import { Component } from 'react';
 class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+    };
   }
 
   render() {
     return (
       <div className="Container">
         <div className="calcInput">
-          <input value="0" />
+          <input type="text" defaultValue="0" />
         </div>
 
         <div className="BodyContainer">
