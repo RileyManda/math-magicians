@@ -8,8 +8,8 @@ class Calculator extends Component {
 
   render() {
     return (
-      <div>
-        <p>Calcultaor UI </p>
+      <div className="Container">
+        <input />
       </div>
     );
   }
