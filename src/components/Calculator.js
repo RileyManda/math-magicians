@@ -132,7 +132,7 @@ const Calculator = () => {
             <button
               type="button"
               className="rightButtons"
-              onClick={() => handleClick('+')}
+              onClick={() => handleClick('÷')}
             >
               ÷
             </button>
