@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-import operate from '../logic/operate';
 
 const Calculator = () => {
   const [state, setState] = useState({
@@ -11,15 +10,26 @@ const Calculator = () => {
 
   const handleClick = (buttonName) => {
     setState((prevState) => {
-      const newState = calculate(prevState, buttonName, operate);
+      const newState = calculate(prevState, buttonName);
+      return newState;
+    });
+  };
+  const handleChange = (e) => {
+    setState((prevState) => {
+      const newState = calculate(prevState, e.target.value);
       return newState;
     });
   };
 
   return (
-    <div className="Container">
+    <div className="CalcContainer">
       <div className="calcInput">
-        <input type="text" value={state.next || state.total || '0'} />
+        <input
+          type="text"
+          id="input"
+          onChange={handleChange}
+          value={state.next || state.total || '0'}
+        />
       </div>
       <div className="BodyContainer">
         <div className="calcBodyleft">
@@ -169,6 +179,7 @@ const Calculator = () => {
         </div>
       </div>
     </div>
+
   );
 };
 
