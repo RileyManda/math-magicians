@@ -3,6 +3,7 @@
   --white-theme-color: #fff;
   --calc-body-color-left: #e0e0e0;
   --calc-body-color-right: #dd8338;
+  --dark-font-color: #000;
 }
 
 .App {
@@ -18,8 +19,8 @@
 
 .CalcContainer {
   align-items: flex-start;
-  margin: 60px auto;
-  width: 50%;
+  margin: 60px 0;
+  width: 60%;
 }
 
 /* calculator */
@@ -136,7 +137,24 @@
 .QuotesContainer {
   align-items: flex-end;
   margin: 60px auto;
-  width: 50%;
+  width: 30%;
+}
+
+.Loading {
+  font-size: 30px;
+  color: var(--grey-white-color);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.Quotes {
+  font-size: 20px;
+  color: var(--dark-font-color);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 /* Quotes END */

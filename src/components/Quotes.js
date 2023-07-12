@@ -38,7 +38,13 @@ function Quotes() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="QuotesContainer">
+        <div className="Quotes">
+          <div>Loading...</div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
@@ -53,9 +59,11 @@ function Quotes() {
 
   return (
     <div className="QuotesContainer">
-      <p>{quote}</p>
+      <div className="Quotes">
+        {' '}
+        <p>{quote}</p>
+      </div>
     </div>
-
   );
 }
 
