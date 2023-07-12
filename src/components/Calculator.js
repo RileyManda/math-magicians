@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-import operate from '../logic/operate';
 
 const Calculator = () => {
   const [state, setState] = useState({
@@ -11,7 +10,7 @@ const Calculator = () => {
 
   const handleClick = (buttonName) => {
     setState((prevState) => {
-      const newState = calculate(prevState, buttonName, operate);
+      const newState = calculate(prevState, buttonName);
       return newState;
     });
   };
