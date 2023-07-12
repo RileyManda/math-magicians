@@ -22,7 +22,7 @@ const Calculator = () => {
   };
 
   return (
-    <div className="Container">
+    <div className="CalcContainer">
       <div className="calcInput">
         <input
           type="text"
@@ -179,6 +179,7 @@ const Calculator = () => {
         </div>
       </div>
     </div>
+
   );
 };
 

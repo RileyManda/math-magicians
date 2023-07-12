@@ -11,9 +11,23 @@
   width: 70%;
 }
 
-.Container {
+.AppContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.CalcContainer {
+  align-items: flex-start;
   margin: 60px auto;
-  width: 60%;
+  width: 50%;
+}
+
+/* calculator */
+.BodyContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
 }
 
 .calcInput {
@@ -34,13 +48,6 @@
   border: none;
   outline: none;
   margin: 0;
-}
-
-.BodyContainer {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: auto;
 }
 
 .calcBodyleft {
@@ -122,3 +129,14 @@
   margin: 0;
   padding: 0;
 }
+
+/* calculator END */
+
+/* Quotes */
+.QuotesContainer {
+  align-items: flex-end;
+  margin: 60px auto;
+  width: 50%;
+}
+
+/* Quotes END */

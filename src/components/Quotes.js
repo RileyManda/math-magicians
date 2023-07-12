@@ -52,9 +52,10 @@ function Quotes() {
   }
 
   return (
-    <div>
+    <div className="QuotesContainer">
       <p>{quote}</p>
     </div>
+
   );
 }
 
