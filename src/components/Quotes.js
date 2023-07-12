@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import apiKey from '../api/config';
 
 function Quotes() {
-  const [quotes, setQuotes] = useState([]);
+  const [data, setQuotes] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,11 +22,9 @@ function Quotes() {
   }, [setQuotes]);
   return (
     <div>
-
-      {quotes.map((data) => (
-        <p key={data.id}>{data.quote}</p>
+      {data.map((quotes) => (
+        <p key={quotes.id}>{quotes.quote}</p>
       ))}
-
     </div>
   );
 }

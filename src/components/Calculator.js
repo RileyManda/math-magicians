@@ -14,11 +14,22 @@ const Calculator = () => {
       return newState;
     });
   };
+  const handleChange = (e) => {
+    setState((prevState) => {
+      const newState = calculate(prevState, e.target.value);
+      return newState;
+    });
+  };
 
   return (
     <div className="Container">
       <div className="calcInput">
-        <input type="text" value={state.next || state.total || '0'} />
+        <input
+          type="text"
+          id="input"
+          onChange={handleChange}
+          value={state.next || state.total || '0'}
+        />
       </div>
       <div className="BodyContainer">
         <div className="calcBodyleft">
