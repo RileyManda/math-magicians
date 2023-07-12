@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import apiKey from '../api/config';
 
 function Quotes() {
-  const [data, setQuotes] = useState([]);
+  const [quote, setQuote] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,16 +16,18 @@ function Quotes() {
       );
       const json = await res.json();
       console.log(json);
-      setQuotes(json);
+      if (json.length > 0) {
+        setQuote(json[0].quote);
+      }
     };
     fetchData();
-  }, [setQuotes]);
+  }, []);
+
   return (
     <div>
-      {data.map((quotes) => (
-        <p key={quotes.id}>{quotes.quote}</p>
-      ))}
+      <p>{quote}</p>
     </div>
   );
 }
+
 export default Quotes;
