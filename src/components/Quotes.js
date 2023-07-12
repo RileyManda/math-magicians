@@ -22,7 +22,6 @@ function Quotes() {
           return res.json();
         })
         .then((json) => {
-          console.log(json);
           if (json.length > 0) {
             setQuote(json[0].quote);
           }
@@ -41,7 +40,9 @@ function Quotes() {
     return (
       <div className="QuotesContainer">
         <div className="Quotes">
-          <div>Loading...</div>
+          <div>
+            <p>Loading...</p>
+          </div>
         </div>
       </div>
     );
