@@ -1,27 +1,55 @@
 import React, { useState, useEffect } from 'react';
-import apiKey from '../api/config';
+import { apiKey, apiUrl, apiHeaders } from '../api/config';
 
 function Quotes() {
   const [quote, setQuote] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(
-        'https://api.api-ninjas.com/v1/quotes?category=happiness',
-        {
-          headers: {
-            'X-Api-Key': apiKey,
-          },
+      fetch(apiUrl, {
+        ...apiHeaders,
+        headers: {
+          ...apiHeaders.headers,
+          'X-Api-Key': apiKey,
         },
-      );
-      const json = await res.json();
-      console.log(json);
-      if (json.length > 0) {
-        setQuote(json[0].quote);
-      }
+      })
+        .then((res) => {
+          if (!res.ok) {
+            throw new Error('Failed to fetch data');
+          }
+          return res.json();
+        })
+        .then((json) => {
+          console.log(json);
+          if (json.length > 0) {
+            setQuote(json[0].quote);
+          }
+        })
+        .catch((error) => {
+          setError(error.message);
+        })
+        .finally(() => {
+          setLoading(false);
+        });
     };
     fetchData();
   }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return (
+      <div>
+        Error:
+        {' '}
+        {error}
+      </div>
+    );
+  }
 
   return (
     <div>
