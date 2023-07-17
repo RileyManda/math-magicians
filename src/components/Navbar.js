@@ -5,7 +5,7 @@ function Navbar({ routes }) {
   return (
     <div className="Navbar">
       <div className="Logo">
-        <h1>Math Magicians</h1>
+        <p>Math Magicians</p>
       </div>
       <nav className="Menu">
         <ul className="Menu-List">
