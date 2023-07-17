@@ -6,6 +6,7 @@
   --dark-font-color: #000;
   --nav-bg-color: #e97b22;
   --righ-btn-color: #d6d1d1;
+  --hover-color: #e95c22;
 }
 
 .App {
@@ -35,12 +36,29 @@
 }
 
 .Menu-Item {
-  margin-left: 10px;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 2px solid var(--white-theme-color);
+  background-color: var(--nav-bg-color);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--white-theme-color);
+  transition: background-color 0.3s ease;
+}
+
+.Menu-Item:hover {
+  background-color: var(--hover-color);
+  color: black;
 }
 
 .Menu-Item a {
   text-decoration: none;
   color: var(--white-theme-color);
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .HomeSection {
@@ -162,6 +180,12 @@
   height: 60px;
 }
 
+.leftButtons:hover {
+  background-color: var(--calc-body-color-right);
+  color: var(--white-theme-color);
+  cursor: pointer;
+}
+
 .rightButtons {
   background-color: var(--calc-body-color-right);
   flex-wrap: wrap;
@@ -172,11 +196,23 @@
   border: var(--white-theme-color) solid 1px;
 }
 
+.rightButtons:hover {
+  background-color: var(--hover-color);
+  color: var(--dark-font-color);
+  cursor: pointer;
+}
+
 .FooterButtons {
   justify-content: space-between;
   width: 100%;
   height: 60px;
   border: var(--white-theme-color) solid 1px;
+}
+
+.FooterButtons:hover {
+  background-color: var(--calc-body-color-right);
+  color: var(--white-theme-color);
+  cursor: pointer;
 }
 
 .zero {
