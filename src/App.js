@@ -1,14 +1,15 @@
+import { useRoutes } from 'react-router-dom';
 import './App.css';
-import Calculator from './components/Calculator';
-import Quotes from './components/Quotes';
+import routes from './route-config';
+import Navbar from './components/Navbar';
 
 function App() {
+  const route = useRoutes(routes);
+
   return (
     <div className="App">
-      <div className="AppContainer">
-        <Calculator />
-        <Quotes />
-      </div>
+      <Navbar routes={routes} />
+      {route}
     </div>
   );
 }
