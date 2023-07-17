@@ -15,7 +15,7 @@ const routes = [
   },
   {
     path: '/quotes',
-    label: 'Quotes',
+    label: 'Quote',
     element: <Quotes />,
   },
 ];
