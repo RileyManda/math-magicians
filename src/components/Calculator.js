@@ -20,7 +20,7 @@ const Calculator = () => {
       return newState;
     });
   };
-
+  const displayValue = state?.next || state?.total || '0';
   return (
     <div className="CalculatorSection">
       <div className="CalcHeading">
@@ -32,7 +32,7 @@ const Calculator = () => {
             type="text"
             id="input"
             onChange={handleChange}
-            value={state.next || state.total || '0'}
+            value={displayValue}
           />
         </div>
         <div className="CalcBodyContainer">
