@@ -1,7 +1,7 @@
 import calculate from './calculate';
 
 describe('calculate', () => {
-  const operationSymbols = [
+  const buttonName = [
     'AC',
     '0',
     '1',
@@ -27,7 +27,7 @@ describe('calculate', () => {
     operation: '+',
   };
 
-  operationSymbols.forEach((operationSymbol) => {
+  buttonName.forEach((operationSymbol) => {
     it(`should update calculator data object with ${operationSymbol} button pressed`, () => {
       const newData = calculate(initialData, operationSymbol);
 
@@ -130,6 +130,22 @@ describe('calculate', () => {
       const newData = calculate(initialData, buttonName);
 
       expect(newData).toEqual({ next: '53', total: '10', operation: '+' });
+    });
+  });
+
+  describe('jest snapshots', () => {
+    buttonName.forEach((operationSymbol) => {
+      it(`should update calculator data object when ${operationSymbol} button is pressed`, () => {
+        const initialData = {
+          total: '10',
+          next: '5',
+          operation: '+',
+        };
+
+        const newData = calculate(initialData, operationSymbol);
+
+        expect(newData).toMatchSnapshot();
+      });
     });
   });
 });

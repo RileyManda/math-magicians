@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calculate jest snapshots should update calculator data object when % button is pressed 1`] = `
+Object {
+  "next": null,
+  "operation": "%",
+  "total": "15",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when + button is pressed 1`] = `
+Object {
+  "next": null,
+  "operation": "+",
+  "total": "15",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when +/- button is pressed 1`] = `
+Object {
+  "next": "-5",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when . button is pressed 1`] = `
+Object {
+  "next": "5.",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when = button is pressed 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "15",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when - button is pressed 1`] = `
+Object {
+  "next": null,
+  "operation": "-",
+  "total": "15",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when 0 button is pressed 1`] = `
+Object {
+  "next": "50",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when 1 button is pressed 1`] = `
+Object {
+  "next": "51",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when 2 button is pressed 1`] = `
+Object {
+  "next": "52",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when 3 button is pressed 1`] = `
+Object {
+  "next": "53",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when 4 button is pressed 1`] = `
+Object {
+  "next": "54",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when 5 button is pressed 1`] = `
+Object {
+  "next": "55",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when 6 button is pressed 1`] = `
+Object {
+  "next": "56",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when 7 button is pressed 1`] = `
+Object {
+  "next": "57",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when 8 button is pressed 1`] = `
+Object {
+  "next": "58",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when 9 button is pressed 1`] = `
+Object {
+  "next": "59",
+  "operation": "+",
+  "total": "10",
+}
+`;
+
+exports[`calculate jest snapshots should update calculator data object when AC button is pressed 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": null,
+}
+`;
