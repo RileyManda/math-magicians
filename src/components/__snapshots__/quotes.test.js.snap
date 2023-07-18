@@ -18,6 +18,24 @@ exports[`Quotes should render error state 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Quotes should render error state when data is not returned 1`] = `
+<div>
+  <div
+    class="QuotesContainer"
+  >
+    <div
+      class="Quotes"
+    >
+      <div>
+        <p>
+          Loading...
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Quotes should render loading state 1`] = `
 <div>
   <div
