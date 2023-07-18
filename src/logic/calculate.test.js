@@ -33,9 +33,11 @@ describe('calculate', () => {
 
       expect(newData).toEqual(expect.any(Object));
     });
+  });
+
+  describe('arithmetic calculations', () => {
     it('should return the sum of two numbers if the + symbol is used', () => {
       const operationSymbol = '+';
-
       const initialData = {
         total: '5',
         next: '5',
@@ -53,7 +55,6 @@ describe('calculate', () => {
 
     it('should return the subtraction of two numbers if the - symbol is used', () => {
       const operationSymbol = '-';
-
       const initialData = {
         total: '5',
         next: '5',
@@ -71,7 +72,6 @@ describe('calculate', () => {
 
     it('should return the division of two numbers if the ÷ symbol is used', () => {
       const operationSymbol = '÷';
-
       const initialData = {
         total: '6',
         next: '3',
@@ -85,6 +85,51 @@ describe('calculate', () => {
         next: null,
         operation: '÷',
       });
+    });
+
+    it('should return the multiplication of two numbers if the x symbol is used', () => {
+      const operationSymbol = 'x';
+      const initialData = {
+        total: '6',
+        next: '2',
+        operation: 'x',
+      };
+
+      const newData = calculate(initialData, operationSymbol);
+
+      expect(newData).toEqual({
+        total: '12',
+        next: null,
+        operation: 'x',
+      });
+    });
+  });
+
+  describe('data objects', () => {
+    it('should return an empty object when buttonName is "0" and obj.next is "0"', () => {
+      const buttonName = '0';
+      const initialData = {
+        total: null,
+        next: '0',
+        operation: '+',
+      };
+
+      const newData = calculate(initialData, buttonName);
+
+      expect(newData).toEqual({});
+    });
+
+    it('should update the calculator data object when a number button is pressed', () => {
+      const buttonName = '3';
+      const initialData = {
+        total: '10',
+        next: '5',
+        operation: '+',
+      };
+
+      const newData = calculate(initialData, buttonName);
+
+      expect(newData).toEqual({ next: '53', total: '10', operation: '+' });
     });
   });
 });
