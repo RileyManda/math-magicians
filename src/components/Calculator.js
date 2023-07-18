@@ -31,6 +31,7 @@ const Calculator = () => {
           <input
             type="text"
             id="input"
+            alt="input"
             onChange={handleChange}
             value={state.next || state.total || '0'}
           />
