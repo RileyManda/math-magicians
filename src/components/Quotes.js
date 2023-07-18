@@ -51,9 +51,8 @@ function Quotes() {
   if (error) {
     return (
       <div>
-        Error:
-        {' '}
-        {error}
+        <div>Error:</div>
+        <div>{error}</div>
       </div>
     );
   }
@@ -61,7 +60,6 @@ function Quotes() {
   return (
     <div className="QuotesContainer">
       <div className="Quotes">
-        {' '}
         <p>{quote}</p>
       </div>
     </div>
