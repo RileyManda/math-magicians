@@ -47,9 +47,8 @@ function Quotes() {
   if (error) {
     return (
       <div>
-        Error:
-        {' '}
-        {error}
+        <div>Error:</div>
+        <div>{error}</div>
       </div>
     );
   }
