@@ -4,7 +4,7 @@ import calculate from '../logic/calculate';
 const Calculator = () => {
   const [state, setState] = useState({
     total: null,
-    next: null,
+    next: '0',
     operation: null,
   });
 
@@ -20,7 +20,7 @@ const Calculator = () => {
       return newState;
     });
   };
-
+  const displayValue = state?.next || state?.total || '0';
   return (
     <div className="CalculatorSection">
       <div className="CalcHeading">
@@ -33,7 +33,7 @@ const Calculator = () => {
             id="input"
             alt="input"
             onChange={handleChange}
-            value={state.next || state.total || '0'}
+            value={displayValue}
           />
         </div>
         <div className="CalcBodyContainer">
