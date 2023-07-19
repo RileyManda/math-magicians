@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, act } from '@testing-library/react';
-import Quotes from './Quotes';
+import Quotes from '../components/Quotes';
 
 describe('Quotes', () => {
   // mock if dom container has been rendered

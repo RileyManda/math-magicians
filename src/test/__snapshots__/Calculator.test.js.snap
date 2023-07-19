@@ -19,6 +19,7 @@ exports[`Calculator should match the snapshot 1`] = `
         class="calcInput"
       >
         <input
+          alt="input"
           id="input"
           type="text"
           value="0"
