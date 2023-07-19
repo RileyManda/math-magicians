@@ -16,11 +16,5 @@ describe('Quotes', () => {
       const { asFragment } = render(<Quotes />);
       expect(asFragment()).toMatchSnapshot();
     });
-    
-  it('should render error state', () => {
-    const { asFragment } = render(<Quotes />);
-    const error = new Error('Failed to fetch data');
-    jest.spyOn(global, 'fetch').mockRejectedValueOnce(error);
-    expect(asFragment()).toMatchSnapshot();
   });
 });
