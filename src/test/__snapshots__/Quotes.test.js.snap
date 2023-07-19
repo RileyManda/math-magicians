@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quotes should match the snapshot 1`] = `
+<div>
+  <div
+    class="QuotesContainer"
+  >
+    <div
+      class="Quotes"
+    >
+      <div>
+        <p>
+          Loading...
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Quotes should render ERROR 1`] = `<DocumentFragment />`;
+
+exports[`Quotes should render error state 1`] = `<DocumentFragment />`;

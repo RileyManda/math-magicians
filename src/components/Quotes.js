@@ -8,30 +8,26 @@ function Quotes() {
 
   useEffect(() => {
     const fetchData = async () => {
-      fetch(apiUrl, {
-        ...apiHeaders,
-        headers: {
-          ...apiHeaders.headers,
-          'X-Api-Key': apiKey,
-        },
-      })
-        .then((res) => {
-          if (!res.ok) {
-            throw new Error('Failed to fetch data');
-          }
-          return res.json();
-        })
-        .then((json) => {
-          if (json.length > 0) {
-            setQuote(json[0].quote);
-          }
-        })
-        .catch((error) => {
-          setError(error.message);
-        })
-        .finally(() => {
-          setLoading(false);
+      try {
+        const res = await fetch(apiUrl, {
+          ...apiHeaders,
+          headers: {
+            ...apiHeaders.headers,
+            'X-Api-Key': apiKey,
+          },
         });
+        if (!res.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        const json = await res.json();
+        if (json.length > 0) {
+          setQuote(json[0].quote);
+        }
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
     };
     fetchData();
   }, []);
@@ -51,9 +47,8 @@ function Quotes() {
   if (error) {
     return (
       <div>
-        Error:
-        {' '}
-        {error}
+        <div>Error:</div>
+        <div>{error}</div>
       </div>
     );
   }
@@ -61,7 +56,6 @@ function Quotes() {
   return (
     <div className="QuotesContainer">
       <div className="Quotes">
-        {' '}
         <p>{quote}</p>
       </div>
     </div>
