@@ -24,10 +24,10 @@ describe('Quotes', () => {
 
   it('should render ERROR', async () => {
     jest.spyOn(global, 'fetch').mockImplementationOnce(() => Promise.resolve({
-      res:{
+      res: {
         ok: false,
-        json () {return Promise.resolve([{quote: "Khanh"}])}
-      }
+        json() { return Promise.resolve([{ quote: 'Khanh' }]); },
+      },
     }));
 
     await act(async () => {
@@ -35,5 +35,4 @@ describe('Quotes', () => {
       expect(asFragment()).toMatchSnapshot();
     });
   });
-  
 });
