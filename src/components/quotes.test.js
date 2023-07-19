@@ -22,4 +22,19 @@ describe('Quotes', () => {
       expect(asFragment()).toMatchSnapshot();
     });
   });
+
+  it('should render ERROR', async () => {
+    jest.spyOn(global, 'fetch').mockImplementationOnce(() => Promise.resolve({
+      res:{
+        ok: false,
+        json () {return Promise.resolve([{quote: "Khanh"}])}
+      }
+    }));
+
+    await act(async () => {
+      const { asFragment } = render(<Quotes />);
+      expect(asFragment()).toMatchSnapshot();
+    });
+  });
+  
 });
