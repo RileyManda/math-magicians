@@ -50,21 +50,22 @@ Math magicians is a website for all fans of mathematics. It is a Single Page App
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<!-- <details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://react.dev/">React.js</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+  <summary>Client</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://react.dev/learn/passing-props-to-a-component#passing-props-to-a-component">React props</a></li>
+  </ul>
+</details>
+
+
+<details>
+<summary>Deployment</summary>
+  <ul>
+    <li><a href="https://render.com/">Render</a></li>
   </ul>
 </details> -->
 
