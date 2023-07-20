@@ -17,7 +17,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  <!-- - [🚀 Live Demo](#live-demo) -->
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -50,23 +50,24 @@ Math magicians is a website for all fans of mathematics. It is a Single Page App
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<!-- <details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://react.dev/">React.js</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+  <summary>Client</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://react.dev/learn/passing-props-to-a-component#passing-props-to-a-component">React props</a></li>
   </ul>
-</details> -->
+</details>
+
+
+<details>
+<summary>Deployment</summary>
+  <ul>
+    <li><a href="https://render.com/">Render</a></li>
+  </ul>
+</details>
 
 <!-- Features -->
 
@@ -78,12 +79,12 @@ Math magicians is a website for all fans of mathematics. It is a Single Page App
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+ ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://math-magicians-nbs9.onrender.com/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
 <!-- GETTING STARTED -->
 
