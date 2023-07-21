@@ -31,5 +31,5 @@
       "rules": { "no-param-reassign": ["error", { "props": false }] }
     }
   ],
-  "ignorePatterns": ["dist/", "build/"]
+  "ignorePatterns": ["dist/", "build/","package-lock.json","package.json"]
 }
