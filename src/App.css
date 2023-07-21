@@ -259,3 +259,82 @@
 }
 
 /* Quotes END */
+
+/* media queries */
+
+/* Max-width 320px */
+@media (max-width: 320px) {
+  .Navbar {
+    padding: 0.5rem;
+  }
+
+  .Menu-Item {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .Quotes p {
+    font-size: 12px;
+    line-height: 80px;
+  }
+}
+
+/* Max-width 375px */
+@media (max-width: 375px) {
+  .Logo p {
+    font-size: 1.8rem;
+  }
+
+  .CalculatorSection {
+    margin: 20% 0;
+  }
+
+  .CalcHeading {
+    flex-wrap: nowrap;
+    text-align: center;
+    margin: 0;
+  }
+
+  .Quotes p {
+    font-size: 18px;
+    line-height: 100px;
+  }
+}
+
+/* Max-width 414px */
+@media (max-width: 414px) {
+  .Menu-Item {
+    font-size: 1.2rem;
+    padding: 10px 18px;
+  }
+
+  .CalculatorSection {
+    margin: 20% 0;
+  }
+
+  .CalcHeading {
+    flex-wrap: nowrap;
+    text-align: center;
+    margin: 0;
+  }
+
+  .Quotes p {
+    font-size: 18px;
+    line-height: 100px;
+  }
+}
+
+/* Max-width 768px */
+@media (max-width: 768px) {
+  .Menu-List {
+    flex-direction: column;
+  }
+}
+
+/* Max-width 1024px */
+@media (max-width: 1024px) {
+  .Menu-Item {
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+}
